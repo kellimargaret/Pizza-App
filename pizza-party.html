@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css" rel="stylesheet">
+    <link href="css/animate.css" rel="stylesheet" type="text/css">
+    <script src="js/jquery-1.11.3.min.js"></script>
+    <script src="js/pizza-order.js"></script>
+    <title>Party Pizza Calculator</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="bg-form">
+        <div class="header">
+          <h1>Welcome to Party Pizza Calculator</h1><br><br>
+          <div class="start-button">
+            <button type="button" name="start-button" class="btn btn-info btn-lg">Start</button>
+          </div>
+        </div>
+        <div class="order-form">
+          <form id="new-order">
+
+            <div class="form-group row">
+              <div class="col-xs-3">
+                <label for="quantity"><h4>Number of Pizzas:</h4></label>
+                <input type="number" class="form-control col-xs-3" id="quantity" required>
+              </div>
+            </div>
+
+            <div class="select" id="pizza-slice">
+              <h4>Pizza size: <select id="pizza-size"></select></h4>
+            </div>
+
+            <h4>Toppings:</h4>
+            <div class="select" id="pizza-toppings">
+              <select id="toppings" multiple="multiple"></select>
+            </div>
+
+            <br>
+            <button type="submit" id="order-btn" class="btn btn-primary">Calculate Pizza Party</button>
+          </form>
+        </div>
+        <div id="result">
+          <h2>Your pizza party will cost: <br><br>
+          $<span class="total-cost"></span></h2>
+        </div>  
+      </div>
+    </div>
+  </body>
+</html>
